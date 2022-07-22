@@ -1,0 +1,23 @@
+1. Create a pipeline in Jenkins.
+2. Make sure you have the registry changes added. Your account_d should be updated and repo should be updated.
+3. Once you create the pipeline, click on Build now.
+4. Login to Nexus, click on your repo, now you should see the image got uploaded.
+5. Once build is successful, go to browser and enter public dns url.
+
+
+
+We will see how to create Docker image and upload into Nexus Docker registry successfully using the below steps.
+- Automating builds
+- Automating Docker image builds
+- Automating Docker image upload into Nexus docker registry
+- Automating Docker container provisioning
+
+
+Pre-requistes:
+1. Jenkins is up and running
+2. Docker installed on Jenkins instance. Click here to for integrating Docker and Jenkins
+3. Docker and Docker pipelines plug-in are installed
+4. Nexus is up and running and docker registry is configured. Click here to know how to do that.
+5. port 80 is opened up in firewall rules to access phpApp running inside Docker container
+
+

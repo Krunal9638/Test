@@ -1,0 +1,26 @@
+For example if we are installing jenkins on the centos or Redhat machines we need to follow the below process.
+
+Pre-requisites :
+Make sure port 22 and 8080 are open in your server firewall.
+You should have sudo access to execute the commands.
+
+Run the below commands to install the Pre-requisites
+
+sudo yum install wget git -y
+
+sudo yum install java-11-openjdk-devel -y  ---> To install java 11 JDK
+
+sudo wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat/jenkins.repo  ---> Add the LTS Jenkins repository.
+
+sudo rpm --import https://jenkins-ci.org/redhat/jenkins-ci.org.key -->  Import the repo key.
+
+sudo yum --showduplicates list jenkins | expand  -->   sudo yum --showduplicates list jenkins | expand
+
+sudo yum install (package name)-(version info)
+
+sudo systemctl start jenkins  -->  Start the Jenkins service.
+
+sudo systemctl enable jenkins -->  sudo systemctl enable jenkins
+
+http://<jenkins-ip>:8080  -->   Access the Jenkins dashboard on port 8080 using your servers IP address.
+

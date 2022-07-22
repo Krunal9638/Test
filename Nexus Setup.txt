@@ -1,0 +1,9 @@
+Steps to setup nexus in jenkins :
+
+download and install the Nexus Jenkins Plugin.
+
+Then from the Jenkins dashboard, navigate to Manage Jenkins -> Plugin Manager, proceed to the Advanced tab, and upload the downloaded HPI using the Upload Plugin.
+
+Once you have the plugin installed, the next thing you need to do is configure a Nexus Repository Manager to be able to upload your build artifacts.
+
+The Nexus Jenkins Plugin uses Jenkins credentials provider to manage server credentials. To authenticate the connection, use the Add dropdown to create a credentials entry and then select it from the Credentials dropdown. After entering the information for your Nexus Repository Manager, and click the Test Connection button to ensure connectivity to your Nexus Repository Manager installation. 
